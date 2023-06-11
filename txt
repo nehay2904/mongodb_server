@@ -1,0 +1,106 @@
+
+//     "req_number" " ,
+"//     "req_blood_group" " ,
+"//     "req_city" " ,
+"//     "req_state" " ,
+"//     "req_prop" " ,
+"//     "pateintname"
+
+
+//     [
+//   {
+  
+//     "req_number " ,
+"//     "req_blood_group":"B+" " ,
+"//     "req_city":"Nagpur" " ,
+"//     "req_state " ,
+"//     "req_prop " ,
+"//     "pateintname
+// },{
+  
+//     "req_number " ,
+"//     "req_blood_group":"A+" " ,
+"//     "req_city":"Nagpur" " ,
+"//     "req_state " ,
+"//     "req_prop " ,
+"//     "pateintname
+// },{
+  
+//     "req_number " ,
+"//     "req_blood_group":"B+" " ,
+"// //     "req_city":"Pune" " ,
+"// //     "req_state " ,
+"// //     "req_prop " ,
+"// //     "pateintname
+// // }" ,
+"// // {
+  
+// //     "req_number " ,
+"// //     "req_blood_group":"A+" " ,
+"// //     "req_city":"Pune" " ,
+"// //     "req_state " ,
+"// //     "req_prop " ,
+"// //     "pateintname
+// // }
+
+
+"donor_name, donor_email, password, blood_group, age, mobile_no, state" :"",
+"city
+
+[
+    {
+    "donor_name ,
+  "donor_email":"am@gmail.com" ,
+  "password":"12" ,
+  "blood_group":"A+" ,
+  "age ,
+  "mobile_no ,
+  "state" :"",
+  "city":"Nagpur"
+  },
+  {
+    "donor_name ,
+  "donor_email":"bn@gmail.com" ,
+  "password":"98" ,
+  "blood_group":"A+" ,
+  "age ,
+  "mobile_no ,
+  "state" :"",
+  "city":"Pune"
+  },
+  ,
+  {
+    "donor_name ,
+  "donor_email":"df@gmail.com" ,
+  "password":"45" ,
+  "blood_group":"B+" ,
+  "age ,
+  "mobile_no ,
+  "state" :"",
+  "city":"Pune"
+  }]
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // donor_name, donor_email, password, blood_group, age, mobile_no, state, city
+
+
+
+
+
+
+
+
+    _id,donor_name,donor_email,password,blood_group,age,mobile_no,state,city
+    
+  
