@@ -119,8 +119,7 @@ app.post('/req', (req, res) => {
       } catch (err) {
         console.log(err);
       }
-    });
-   
+    })
   }
   catch (error) {
     console.log(error)

@@ -6,22 +6,22 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIO(server);
 
-const PORT = process.env.PORT || 5000;
-
 io.on('connection', (socket) => {
-  console.log('A client connected.');
-
-  socket.on('request', (requestData) => {
-    // Process the request and send the response back to the client
-    const responseData = 'This is the response data';
-    socket.emit('response', responseData);
-  });
+  console.log('A client connected');
 
   socket.on('disconnect', () => {
-    console.log('A client disconnected.');
+    console.log('A client disconnected');
+  });
+
+  // Handle a custom event
+  socket.on('chat message', (message) => {
+    console.log('Received message:', message);
+
+    // Broadcast the message to all connected clients
+    io.emit('chat message', message);
   });
 });
 
-server.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+server.listen(3001, () => {
+  console.log('Server listening on port 3001');
 });
