@@ -3,8 +3,7 @@
 const express = require('express')
 const app = express()
 const mongoose = require("mongoose")
-const cors = require('cors')
-app.use(cors());
+
 app.use(express.json())
 const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -97,11 +96,17 @@ app.put('/profile', async (req, res) => {
   }
 });
 
+app.delete('/delete', async(req, res) => {
+  const old_user = await userModel.findOne();
 
-
-
-
-
+  userModel.findByIdAndDelete(old_user._id, (err) => {
+    if (err) {
+      console.log(err);
+    } else {
+      res.json('Item deleted successfully');
+    }
+  });
+});
 
 
 app.post('/req', (req, res) => {
