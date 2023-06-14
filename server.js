@@ -18,7 +18,6 @@ const PORT = process.env.PORT;
 const MONGODB_URI = process.env.MONGODB_URI;
 // 
 // MONGODB_URI=mongodb+srv://neha2212:221200@cluster0.lhaoo6g.mongodb.net/test
-// PORT=4000
 
 //connection of mongoose
 mongoose.connect(MONGODB_URI, {
