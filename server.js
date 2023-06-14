@@ -66,7 +66,7 @@ app.post('/login', async (req, res) => {
       return res.status(401).json({ message: 'Invalid credentials' });
     }
 
-    // Generate JWT
+    
     const token = jwt.sign({ userId: user._id }, 'your_secret_key');
     res.json({ token });
   } catch (error) {
